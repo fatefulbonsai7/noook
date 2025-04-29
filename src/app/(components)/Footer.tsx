@@ -32,9 +32,9 @@ export default function Footer() {
       <div>
         <h4 style={{ fontWeight: 600, fontSize: 20, marginBottom: 12 }}>Connect</h4>
         <div style={{ display: "flex", gap: 16, marginBottom: 12 }}>
-          <a href="#"><img src="/icon-fb.svg" alt="Facebook" width={24} height={24} /></a>
-          <a href="#"><img src="/icon-ig.svg" alt="Instagram" width={24} height={24} /></a>
-          <a href="#"><img src="/icon-x.svg" alt="X" width={24} height={24} /></a>
+          // <a href="#"><img src="/icon-fb.svg" alt="Facebook" width={24} height={24} /></a>
+          // <a href="#"><img src="/icon-ig.svg" alt="Instagram" width={24} height={24} /></a>
+          // <a href="#"><img src="/icon-x.svg" alt="X" width={24} height={24} /></a>
         </div>
         <div style={{ fontSize: 16 }}>
           <p>Email: <a href="mailto:info@noook.org">info@noook.org</a></p>
