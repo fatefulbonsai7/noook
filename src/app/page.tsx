@@ -1,7 +1,31 @@
 import Image from "next/image";
 
 
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
 export default function Home() {
+  // Read latest blog post
+  let latestPost = null;
+  const postsDir = path.join(process.cwd(), "src/content/blog");
+  if (fs.existsSync(postsDir)) {
+    const filenames = fs.readdirSync(postsDir).filter(f => f.endsWith(".md"));
+    const posts = filenames.map((filename) => {
+      const filePath = path.join(postsDir, filename);
+      const fileContent = fs.readFileSync(filePath, "utf8");
+      const { data } = matter(fileContent);
+      return {
+        slug: filename.replace(/\.md$/, ""),
+        title: data.title || "Untitled",
+        date: data.date || "",
+        excerpt: data.excerpt || "",
+      };
+    });
+    posts.sort((a, b) => (a.date < b.date ? 1 : -1));
+    latestPost = posts[0] || null;
+  }
+
   return (
     <main
       style={{
@@ -14,6 +38,20 @@ export default function Home() {
         minHeight: "100vh"
       }}
     >
+      {/* Headline Blog Update */}
+      {latestPost && (
+        <section style={{ background: "#f8bbd0", borderRadius: 14, padding: 24, marginBottom: 36, boxShadow: "0 2px 8px 0 #f8bbd0" }}>
+          <div style={{ fontWeight: 900, color: "#ad1457", fontSize: 16, letterSpacing: 1, marginBottom: 6 }}>
+            (Latest Blog Update)
+          </div>
+          <div style={{ fontWeight: 700, fontSize: 18, color: "#ad1457", marginBottom: 3 }}>
+            {latestPost.date ? new Date(latestPost.date).toLocaleDateString() : ""}: <a href="/blog" style={{ color: "#ad1457", textDecoration: "underline", fontWeight: 800 }}>{latestPost.title}</a>
+          </div>
+          <div style={{ fontSize: 17, color: "#ad1457" }}>
+            {latestPost.excerpt}
+          </div>
+        </section>
+      )}
       <div style={{ display: "flex", justifyContent: "center", marginBottom: 32 }}>
         <Image
           src="/Noook-home-image.png"
