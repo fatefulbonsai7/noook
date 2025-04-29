@@ -26,7 +26,7 @@ export default function Footer() {
       {/* Column 3: Newsletter Signup */}
       <div>
         <h4 style={{ fontWeight: 600, fontSize: 20, marginBottom: 12 }}>Newsletter</h4>
-        <div style={{ margin: '0 auto', maxWidth: 540 }} dangerouslySetInnerHTML={{ __html: `<iframe width="540" height="305" src="https://sibforms.com/serve/MUIFAFTOnbtssyX4fnS6b2DKblUxwDi7fYx0uGYlUQ3CTeeJeffLTOyDvjIoy1TBqoe5I2unqi_BXGfwHl7DEDZ7kKlp8A9oQoCeym7DCaz7QSE8hNlQF-Nm8WzatU4OeEzssT16dHRr882K0flwht0fJ3p4L7ZGMY3eMj8dJGp66iWhJ7lzNyV4euvYBU-x6UD5qU4LjLq1n0xl" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>` }} />
+        <div style={{ margin: '0 auto', maxWidth: 540 }} dangerouslySetInnerHTML={{ __html: `<iframe width="540" height="305" src="https://sibforms.com/serve/MUIFALUJ_F6nQuoPMDXi2f2H_-nihde4rYlZAklbsivf2zNjBUvK71i9bV_5O0HXUYuq5gmQbMj6bjjJ-RqBWvOpvm3ifcRkxSdxB8pGWaBGLSu6Whg6RgYaCJiXHFT1Dj-VVyMq21pGW3jZccYdL7zSz8XbJjDewpcAPcz5D3ZiSvvsya8zn0zSAs2JCQtrTELZdJE41MpR9gE1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>` }} />
       </div>
       {/* Column 4: Socials + Contact */}
       <div>
