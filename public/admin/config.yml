@@ -3,7 +3,6 @@ backend:
   repo: fatefulbonsai7/noook
   branch: main
   client_id: Ov23lihrAbDBIiWoHiqK
-  auth_endpoint: https://auth.netlify.com
 media_folder: "public/uploads"
 public_folder: "/uploads"
 collections:
