@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: fatefulbonsai7/noook
   branch: main
+  client_id: Ov23lihrAbDBIiWoHiqK
+  base_url: https://api.netlify.com
 media_folder: "public/uploads"
 public_folder: "/uploads"
 collections:
