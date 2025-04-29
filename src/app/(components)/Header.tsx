@@ -15,7 +15,7 @@ export default function Header() {
       <nav style={{ display: "flex", alignItems: "center", height: "100%", maxWidth: 1440, margin: "0 auto", padding: "0 120px" }}>
         <div style={{ flex: "0 0 240px" }}>
           <Link href="/">
-            <img src="/logo.png" alt="Noook Logo" style={{ height: 40, width: 120, objectFit: "contain" }} />
+            <img src="/logo.png" alt="Noook Logo" style={{ height: 120, width: 120, objectFit: "contain" }} />
           </Link>
         </div>
         <div style={{ flex: 1, display: "flex", justifyContent: "center", gap: 40 }}>

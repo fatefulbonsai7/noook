@@ -1,9 +1,12 @@
+import React from "react";
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer style={{ background: "#ffe4ec", minHeight: 400, padding: "64px 120px 32px 120px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32 }}>
       {/* Column 1: Logo + Mission */}
       <div>
-        <img src="/logo.png" alt="Noook Logo" style={{ height: 40, width: 120, objectFit: "contain", marginBottom: 16 }} />
+        <Image src="/logo.png" alt="Noook Logo" width={120} height={120} style={{ objectFit: "contain", marginBottom: 16 }} />
         <p style={{ fontWeight: 500, fontSize: 18 }}>
           Empowering families, one creation at a time.
         </p>
@@ -32,12 +35,12 @@ export default function Footer() {
       <div>
         <h4 style={{ fontWeight: 600, fontSize: 20, marginBottom: 12 }}>Connect</h4>
         <div style={{ display: "flex", gap: 16, marginBottom: 12 }}>
-          // <a href="#"><img src="/icon-fb.svg" alt="Facebook" width={24} height={24} /></a>
-          // <a href="#"><img src="/icon-ig.svg" alt="Instagram" width={24} height={24} /></a>
-          // <a href="#"><img src="/icon-x.svg" alt="X" width={24} height={24} /></a>
+          {/* <a href="#"><Image src="/icon-fb.svg" alt="Facebook" width={24} height={24} /></a> */}
+          <a href="https://www.instagram.com/ehzzo/" target="_blank" rel="noopener noreferrer"><Image src="/icon-ig.svg" alt="Instagram" width={24} height={24} /></a>
+          {/* <a href="#"><Image src="/icon-x.svg" alt="X" width={24} height={24} /></a> */}
         </div>
         <div style={{ fontSize: 16 }}>
-          <p>Email: <a href="mailto:info@noook.org">info@noook.org</a></p>
+          <p>Email: <a href="mailto:NOOOK.secretary@gmail.com">NOOOK.secretary@gmail.com</a></p>
         </div>
       </div>
     </footer>
