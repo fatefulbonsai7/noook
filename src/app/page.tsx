@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <section style={{ textAlign: "center", marginBottom: 48 }}>
         <h1 style={{ fontSize: 54, fontWeight: 900, marginBottom: 12, color: "var(--accent-dark)" }}>
-          Empowering Families, One Creation at a Time
+          Empowering Families, One Crochet at a Time
         </h1>
         <h2 style={{ fontSize: 28, fontWeight: 600, marginBottom: 24, color: "var(--accent)" }}>
           Our Vision
