@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer style={{ background: "#fafbfc", minHeight: 400, padding: "64px 120px 32px 120px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32 }}>
+    <footer style={{ background: "#ffe4ec", minHeight: 400, padding: "64px 120px 32px 120px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32 }}>
       {/* Column 1: Logo + Mission */}
       <div>
         <img src="/logo.png" alt="Noook Logo" style={{ height: 40, width: 120, objectFit: "contain", marginBottom: 16 }} />
@@ -25,7 +25,7 @@ export default function Footer() {
         <h4 style={{ fontWeight: 600, fontSize: 20, marginBottom: 12 }}>Newsletter</h4>
         <form style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           <input type="email" placeholder="Your email" style={{ height: 48, borderRadius: 8, border: "1px solid #ccc", padding: "0 16px" }} />
-          <button type="submit" style={{ height: 48, borderRadius: 8, background: "#PX1", color: "#fff", fontWeight: 600, fontSize: 16, textTransform: "uppercase", border: "none" }}>Subscribe</button>
+          <button type="submit" style={{ height: 48, borderRadius: 8, background: "#f06292", color: "#fff", fontWeight: 600, fontSize: 16, textTransform: "uppercase", border: "none", boxShadow: "0 2px 8px 0 #f8bbd0" }}>Subscribe</button>
         </form>
       </div>
       {/* Column 4: Socials + Contact */}

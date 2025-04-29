@@ -11,7 +11,7 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header style={{ height: 80, boxShadow: "0 2px 4px rgba(0,0,0,0.08)", background: "#fff", position: "sticky", top: 0, zIndex: 10 }}>
+    <header style={{ height: 80, boxShadow: "0 2px 8px 0 #f8bbd0", background: "#fff0f6", position: "sticky", top: 0, zIndex: 10 }}>
       <nav style={{ display: "flex", alignItems: "center", height: "100%", maxWidth: 1440, margin: "0 auto", padding: "0 120px" }}>
         <div style={{ flex: "0 0 240px" }}>
           <Link href="/">
@@ -20,7 +20,7 @@ export default function Header() {
         </div>
         <div style={{ flex: 1, display: "flex", justifyContent: "center", gap: 40 }}>
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} style={{ fontSize: 24, fontWeight: 500, textDecoration: "none", color: "#222" }}>
+            <Link key={link.href} href={link.href} style={{ fontSize: 24, fontWeight: 500, textDecoration: "none", color: "#ad1457", transition: "color 0.2s" }}>
               {link.label}
             </Link>
           ))}

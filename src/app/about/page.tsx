@@ -1,9 +1,9 @@
 export default function AboutPage() {
   return (
-    <main style={{ maxWidth: 800, margin: "0 auto", padding: 40 }}>
-      <h1 style={{ fontSize: 48, fontWeight: 800, marginBottom: 24 }}>About Us</h1>
+    <main style={{ maxWidth: 800, margin: "0 auto", padding: 40, background: "var(--background)", color: "var(--foreground)", minHeight: "100vh" }}>
+      <h1 style={{ fontSize: 48, fontWeight: 800, marginBottom: 24, color: "var(--accent-dark)" }}>About Us</h1>
       <section style={{ marginBottom: 32 }}>
-        <p style={{ fontSize: 22, fontWeight: 600, color: "#2e7d32", marginBottom: 8 }}>
+        <p style={{ fontSize: 22, fontWeight: 600, color: "var(--accent)", marginBottom: 8 }}>
           NOOOK Foundation is a youth-powered non-profit dedicated to creating change, one stitch at a time.
         </p>
         <p style={{ fontSize: 18, marginBottom: 8 }}>
@@ -17,7 +17,7 @@ export default function AboutPage() {
         </p>
       </section>
       <section style={{ marginBottom: 32 }}>
-        <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 12 }}>Our Beneficiaries</h2>
+        <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 12, color: "var(--accent)" }}>Our Beneficiaries</h2>
         <p style={{ fontSize: 18, marginBottom: 8 }}>
           NOOOK continues to support organizations that align with our cause. Our commitment is to assist these beneficiaries through long-term fund-raising efforts.
         </p>
@@ -29,7 +29,7 @@ export default function AboutPage() {
         </ul>
       </section>
       <section style={{ marginBottom: 32 }}>
-        <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 12 }}>Contact Us</h2>
+        <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 12, color: "var(--accent)" }}>Contact Us</h2>
         <p style={{ fontSize: 18, marginBottom: 8 }}>
           NOOOK Foundation is a 501(c)(3) non-profit organization led by women and youths.
         </p>
@@ -42,7 +42,7 @@ export default function AboutPage() {
           <strong>Address:</strong> 7231 196th St SW, Lynnwood WA 98036
         </div>
       </section>
-      <section style={{ marginTop: 32, padding: 24, background: "#f1f8e9", borderRadius: 12, textAlign: "center" }}>
+      <section style={{ marginTop: 32, padding: 24, background: "#f8bbd0", borderRadius: 12, textAlign: "center", color: "#ad1457", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
         <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>Together, we crochet a future of hope.</h3>
       </section>
     </main>
