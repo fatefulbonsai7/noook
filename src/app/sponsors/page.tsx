@@ -26,6 +26,26 @@ export default function SponsorsPage() {
       <section style={{ marginTop: 32, padding: 24, background: "#f8bbd0", borderRadius: 12, textAlign: "center", color: "#ad1457", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
         <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>Together, we crochet a future of hope.</h3>
       </section>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: 40 }}>
+        <a
+          href="mailto:NOOOK.secretary@gmail.com"
+          style={{
+            background: "#f06292",
+            color: "#fff",
+            fontWeight: 700,
+            fontSize: 22,
+            padding: "16px 36px",
+            borderRadius: 12,
+            boxShadow: "0 2px 8px 0 #f8bbd0",
+            textDecoration: "none",
+            transition: "background 0.2s, box-shadow 0.2s",
+            letterSpacing: 1,
+            display: "inline-block"
+          }}
+        >
+          Email Us
+        </a>
+      </div>
     </main>
   );
 }
