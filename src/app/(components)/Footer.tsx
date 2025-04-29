@@ -26,10 +26,7 @@ export default function Footer() {
       {/* Column 3: Newsletter Signup */}
       <div>
         <h4 style={{ fontWeight: 600, fontSize: 20, marginBottom: 12 }}>Newsletter</h4>
-        <form style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-          <input type="email" placeholder="Your email" style={{ height: 48, borderRadius: 8, border: "1px solid #ccc", padding: "0 16px" }} />
-          <button type="submit" style={{ height: 48, borderRadius: 8, background: "#f06292", color: "#fff", fontWeight: 600, fontSize: 16, textTransform: "uppercase", border: "none", boxShadow: "0 2px 8px 0 #f8bbd0" }}>Subscribe</button>
-        </form>
+        <div style={{ margin: '0 auto', maxWidth: 540 }} dangerouslySetInnerHTML={{ __html: `<iframe width="540" height="305" src="https://sibforms.com/serve/MUIFAO73D6jwVNyqornd_jgDBDl9B7ve6YBpIo-qjMlU5IFGLwXJ969MxddjG5pBva2hBjh1jVbDlUz7OTvzuD8v5fpRJBeslqBeYj4TY3qCd3dCPl97kzCp5rZzy2xG2bbeus85ETtaYvnwge3aJEMg-Y63ukqMqbxepZJKu1pKyV7fCqtsDbHUgjgzBewhKvX47Z3BujDnDMkM" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>` }} />
       </div>
       {/* Column 4: Socials + Contact */}
       <div>
