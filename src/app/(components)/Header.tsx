@@ -15,11 +15,11 @@ const navLinks = [
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header style={{ height: 80, boxShadow: "0 2px 8px 0 #f8bbd0", background: "#fff0f6", position: "sticky", top: 0, zIndex: 10 }}>
+    <header style={{ height: 80, boxShadow: "0 2px 8px 0 #f8bbd0", background: "var(--background)", position: "sticky", top: 0, zIndex: 10 }}>
       <nav className="header-nav">
         <div style={{ flex: "0 0 120px" }}>
           <Link href="/">
-            <Image src="/logo.png" alt="Noook Logo" width={60} height={60} style={{ objectFit: "contain" }} />
+            <Image src="/logo.png" alt="Noook Logo" width={100} height={100} style={{ objectFit: "contain" }} />
           </Link>
         </div>
         {/* Desktop Nav */}
@@ -74,10 +74,10 @@ export default function Header() {
           gap: 32px;
         }
         .nav-link {
-          font-size: 20px;
-          font-weight: 500;
+          font-size: 24px !important;
+          font-weight: 700 !important;
           text-decoration: none;
-          color: #ad1457;
+          color: var(--accent-dark) !important;
           transition: color 0.2s;
         }
         .hamburger {
@@ -96,7 +96,7 @@ export default function Header() {
         .hamburger-bar {
           width: 28px;
           height: 4px;
-          background: #ad1457;
+          background: var(--accent-dark);
           margin: 3px 0;
           border-radius: 2px;
           transition: all 0.2s;
@@ -106,8 +106,8 @@ export default function Header() {
           top: 80px;
           left: 0;
           right: 0;
-          background: #fff0f6;
-          box-shadow: 0 2px 8px 0 #f8bbd0;
+          background: var(--background);
+          box-shadow: 0 2px 8px 0 var(--box-shadow);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -115,9 +115,9 @@ export default function Header() {
           padding: 16px 0;
         }
         .mobile-nav-link {
-          font-size: 22px;
-          font-weight: 600;
-          color: #ad1457;
+          font-size: 24px !important;
+          font-weight: 700 !important;
+          color: var(--accent-dark) !important;
           text-decoration: none;
           padding: 12px 0;
           width: 100%;

@@ -7,7 +7,7 @@ import matter from "gray-matter";
 
 export default function Home() {
   // Read latest blog post
-  const postsDir = path.join(process.cwd(), "src/content/blog");
+  /*const postsDir = path.join(process.cwd(), "src/content/blog");
   if (fs.existsSync(postsDir)) {
     const filenames = fs.readdirSync(postsDir).filter(f => f.endsWith(".md"));
     const posts = filenames.map((filename) => {
@@ -22,7 +22,7 @@ export default function Home() {
       };
     });
     posts.sort((a, b) => (a.date < b.date ? 1 : -1));
-  }
+  }*/
 
   return (
     <main
@@ -31,7 +31,7 @@ export default function Home() {
         margin: "0 auto",
         padding: 40,
         fontFamily: 'inherit',
-        background: "var(--background)",
+        background: "#fff0f6",
         color: "var(--foreground)",
         minHeight: "100vh"
       }}
@@ -39,13 +39,13 @@ export default function Home() {
       {/* Headline Blog Update */}
       {/*latestPost && (
         <section style={{ background: "#f8bbd0", borderRadius: 14, padding: 24, marginBottom: 36, boxShadow: "0 2px 8px 0 #f8bbd0" }}>
-          <div style={{ fontWeight: 900, color: "#ad1457", fontSize: 16, letterSpacing: 1, marginBottom: 6 }}>
+          <div style={{ fontWeight: 900, color: "var(--accent-dark)", fontSize: 16, letterSpacing: 1, marginBottom: 6 }}>
             (Latest Blog Update)
           </div>
-          <div style={{ fontWeight: 700, fontSize: 18, color: "#ad1457", marginBottom: 3 }}>
-            {latestPost.date ? new Date(latestPost.date).toLocaleDateString() : ""}: <a href="/blog" style={{ color: "#ad1457", textDecoration: "underline", fontWeight: 800 }}>{latestPost.title}</a>
+          <div style={{ fontWeight: 700, fontSize: 18, color: "var(--accent-dark)", marginBottom: 3 }}>
+            {latestPost.date ? new Date(latestPost.date).toLocaleDateString() : ""}: <a href="/blog" style={{ color: "var(--accent-dark)", textDecoration: "underline", fontWeight: 800 }}>{latestPost.title}</a>
           </div>
-          <div style={{ fontSize: 17, color: "#ad1457" }}>
+          <div style={{ fontSize: 17, color: "var(--accent-dark)" }}>
             {latestPost.excerpt}
           </div>
         </section>
@@ -60,7 +60,7 @@ export default function Home() {
           style={{ maxWidth: "100%", height: "auto", borderRadius: 18, marginBottom: 18, boxShadow: "0 2px 12px 0 #f8bbd0" }}
           priority
         />
-        <h1 style={{ fontSize: 48, fontWeight: 900, marginBottom: 10, color: "#ad1457" }}>Hi! I’m Ellie from NOOOK!</h1>
+        <h1 style={{ fontSize: 48, fontWeight: 900, marginBottom: 10, color: "var(--accent-dark)" }}>Hi! I’m Ellie from NOOOK!</h1>
         <p style={{ fontSize: 22, maxWidth: 600, margin: "0 auto", marginBottom: 8 }}>
           NOOOK is like a safe quiet nook with a crochet hook. Me and my friends started it with our moms because we wanted to help people who don’t have homes. We crochet things (like patches and stuffies!) and raise money to give to shelters, kids, and families who really need it.
         </p>
@@ -70,7 +70,7 @@ export default function Home() {
         <p style={{ fontSize: 20, maxWidth: 600, margin: "0 auto", marginBottom: 8 }}>
           Thanks for reading! I hope you’ll cheer us on! <span role="img" aria-label="smile">😊</span>
         </p>
-        <p style={{ fontWeight: 700, marginTop: 8, color: "#f06292" }}>Love, Ellie & Team NOOOK 💗</p>
+        <p style={{ fontWeight: 700, marginTop: 8, color: "var(--accent)" }}>Love, Ellie & Team NOOOK 💗</p>
       </section>
 
       {/* Our Story Section */}
@@ -83,8 +83,8 @@ export default function Home() {
           style={{ borderRadius: 18, marginRight: 32, marginBottom: 16, boxShadow: "0 2px 8px 0 #f06292", objectFit: "cover" }}
         />
         <div style={{ flex: 1, minWidth: 250 }}>
-          <h2 style={{ fontSize: 32, fontWeight: 800, marginBottom: 8, color: "#ad1457" }}>Story of NOOOK</h2>
-          <blockquote style={{ fontStyle: "italic", color: "#ad1457", marginBottom: 14 }}>
+          <h2 style={{ fontSize: 32, fontWeight: 800, marginBottom: 8, color: "var(--accent-dark)" }}>Story of NOOOK</h2>
+          <blockquote style={{ fontStyle: "italic", color: "var(--accent-dark)", marginBottom: 14 }}>
             “We just wanted to show our daughters that even small acts—like a crochet—can make a big difference.”
           </blockquote>
           <p style={{ fontSize: 20, marginBottom: 8 }}>
@@ -97,8 +97,8 @@ export default function Home() {
       </section>
 
       {/* Meet the Mascots Section */}
-      <section style={{ background: "#fffde7", borderRadius: 18, padding: 32, marginBottom: 48, boxShadow: "0 2px 8px 0 #ffe082", textAlign: "center" }}>
-        <h2 style={{ fontSize: 32, fontWeight: 800, marginBottom: 18, color: "#ad1457" }}>Meet the NOOOK Mascots</h2>
+      <section style={{ background: "#fff9db", borderRadius: 18, padding: 32, marginBottom: 48, boxShadow: "0 2px 8px 0 #ffe082", textAlign: "center" }}>
+        <h2 style={{ fontSize: 32, fontWeight: 800, marginBottom: 18, color: "var(--accent-dark)" }}>Meet the NOOOK Mascots</h2>
         <Image
           src="/mascots.png"
           alt="NOOOK mascots: bear, frog, and bird"
@@ -123,7 +123,7 @@ export default function Home() {
             <p style={{ fontSize: 17, margin: 0 }}>Generous, thoughtful, and always spreading hope.</p>
           </div>
         </div>
-        <p style={{ fontSize: 18, marginTop: 18, color: "#ad1457" }}>
+        <p style={{ fontSize: 18, marginTop: 18, color: "var(--accent-dark)" }}>
           These mascots, inspired by the girls themselves, remind us that everyone—no matter how young—can be a soft-hearted hero for change.
         </p>
       </section>
@@ -138,7 +138,7 @@ export default function Home() {
           style={{ borderRadius: 14, marginRight: 32, marginBottom: 16, boxShadow: "0 2px 8px 0 #b2dfdb" }}
         />
         <div style={{ flex: 1, minWidth: 250 }}>
-          <h2 style={{ fontSize: 30, fontWeight: 800, marginBottom: 10, color: "#388e3c" }}>How We Help</h2>
+          <h2 style={{ fontSize: 30, fontWeight: 800, marginBottom: 10, color: "var(--accent)" }}>How We Help</h2>
           <p style={{ fontSize: 19, marginBottom: 8 }}>
             Every year, we crochet and sell hundreds of patches, stuffies, and gifts to raise money for shelters, kids, and families in need.
           </p>
@@ -153,30 +153,30 @@ export default function Home() {
 
       {/* Get Involved Section (reuse CTAs) */}
       <section style={{ textAlign: "center", marginBottom: 48 }}>
-        <h2 style={{ fontSize: 32, fontWeight: 800, marginBottom: 18, color: "#ad1457" }}>Empowering Families, One Crochet at a Time.
+        <h2 style={{ fontSize: 32, fontWeight: 800, marginBottom: 18, color: "var(--accent-dark)" }}>Empowering Families, One Crochet at a Time.
           <br></br>
           Join us in making this vision a reality!
         </h2>
-        <p style={{ fontSize: 22, marginBottom: 0, color: "#ad1457" }}>
+        <p style={{ fontSize: 22, marginBottom: 0, color: "var(--accent-dark)" }}>
           Together, we’re not just raising funds—we’re empowering youth, raising hope, and creating a future where everyone has a place to call home.
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 32, justifyContent: "center", marginBottom: 24 }}>
-          <div style={{ flex: "1 1 260px", background: "#ffe4ec", borderRadius: 12, padding: 24, minWidth: 220, color: "#ad1457", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
+          <div style={{ flex: "1 1 260px", background: "#ffe4ec", borderRadius: 12, padding: 24, minWidth: 220, color: "var(--accent-dark)", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
             <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 8 }}>Donate</h3>
             <p style={{ fontSize: 17, marginBottom: 8 }}>Help us give big grants to groups that help people right away.</p>
             <a href="/store" style={{ color: "#fff", background: "#f06292", fontWeight: 600, padding: "6px 16px", borderRadius: 8, display: "inline-block", marginTop: 8 }}>Browse Now</a>
           </div>
-          <div style={{ flex: "1 1 260px", background: "#ffe4ec", borderRadius: 12, padding: 24, minWidth: 220, color: "#ad1457", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
+          <div style={{ flex: "1 1 260px", background: "#ffe4ec", borderRadius: 12, padding: 24, minWidth: 220, color: "var(--accent-dark)", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
             <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 8 }}>Sponsor</h3>
             <p style={{ fontSize: 17, marginBottom: 8 }}>Support our mission and empower youth-led giving.</p>
             <a href="/sponsors" style={{ color: "#fff", background: "#f06292", fontWeight: 600, padding: "6px 16px", borderRadius: 8, display: "inline-block", marginTop: 8 }}>Become a Sponsor</a>
           </div>
-          <div style={{ flex: "1 1 260px", background: "#f3e5f5", borderRadius: 12, padding: 24, minWidth: 220, color: "#ad1457", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
+          <div style={{ flex: "1 1 260px", background: "#f3e5f5", borderRadius: 12, padding: 24, minWidth: 220, color: "var(--accent-dark)", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
             <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 8 }}>Join</h3>
             <p style={{ fontSize: 17, marginBottom: 8 }}>Subscribe to Club NOOOK through monthly, annual or lifetime membership</p>
             <a href="/membership" style={{ color: "#fff", background: "#ad1457", fontWeight: 600, padding: "6px 16px", borderRadius: 8, display: "inline-block", marginTop: 8 }}>Become a Member</a>
           </div>
-          <div style={{ flex: "1 1 260px", background: "#f3e5f5", borderRadius: 12, padding: 24, minWidth: 220, color: "#ad1457", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
+          <div style={{ flex: "1 1 260px", background: "#f3e5f5", borderRadius: 12, padding: 24, minWidth: 220, color: "var(--accent-dark)", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
             <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 8 }}>Volunteer</h3>
             <p style={{ fontSize: 17, marginBottom: 8 }}>Send us a handmade crochet item for sale. Proceeds go directly to our beneficiaries.</p>
             <a href="mailto:NOOOK.secretary@gmail.com" style={{ color: "#fff", background: "#ad1457", fontWeight: 600, padding: "6px 16px", borderRadius: 8, display: "inline-block", marginTop: 8 }}>Contact Us</a>
@@ -186,7 +186,7 @@ export default function Home() {
 
       {/* Instagram Section */}
       <section style={{ background: "#fff0f6", borderRadius: 18, padding: 32, marginBottom: 48, boxShadow: "0 2px 8px 0 #f8bbd0", textAlign: "center" }}>
-        <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "#ad1457" }}>Follow Us on Instagram!</h2>
+        <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "var(--accent-dark)" }}>Follow Us on Instagram!</h2>
         <p style={{ fontSize: 18, marginBottom: 12 }}>Join our community and stay inspired by the stories of hope and creativity.</p>
         <a href="https://www.instagram.com/ehzzo/" target="_blank" rel="noopener noreferrer">
           <Image 
@@ -212,14 +212,14 @@ export default function Home() {
 
       {/* Newsletter Signup Section */}
       <section style={{ background: "#fff0f6", borderRadius: 18, padding: 32, marginBottom: 48, boxShadow: "0 2px 8px 0 #f8bbd0", textAlign: "center" }}>
-        {/*<h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "#ad1457" }}>Stay in the Loop!</h2>
+        {/*<h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "var(--accent-dark)" }}>Stay in the Loop!</h2>
         <p style={{ fontSize: 18, marginBottom: 12 }}>Sign up for our newsletter and follow our journey of hope, creativity, and compassion.</p>
         <form action="#" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, maxWidth: 320, margin: "0 auto" }}>
           <input type="email" placeholder="Your email address" style={{ padding: 10, borderRadius: 8, border: "1px solid #f06292", fontSize: 16, marginBottom: 4, width: "100%" }} required />
           <button type="submit" style={{ background: "#f06292", color: "#fff", fontWeight: 700, padding: "10px 24px", borderRadius: 8, border: "none", fontSize: 18, cursor: "pointer" }}>Subscribe</button>
         </form>*/}
         <div>
-          <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "#ad1457" }}>Stay in the Loop!</h2>
+          <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "var(--accent-dark)" }}>Stay in the Loop!</h2>
           <p style={{ fontSize: 18, marginBottom: 12 }}>Sign up for our newsletter and follow our journey of hope, creativity, and compassion.</p>
           <div style={{ margin: '0 auto', maxWidth: 700 }} dangerouslySetInnerHTML={{ __html: `<iframe width="700" height="305" src="https://sibforms.com/serve/MUIFALUJ_F6nQuoPMDXi2f2H_-nihde4rYlZAklbsivf2zNjBUvK71i9bV_5O0HXUYuq5gmQbMj6bjjJ-RqBWvOpvm3ifcRkxSdxB8pGWaBGLSu6Whg6RgYaCJiXHFT1Dj-VVyMq21pGW3jZccYdL7zSz8XbJjDewpcAPcz5D3ZiSvvsya8zn0zSAs2JCQtrTELZdJE41MpR9gE1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>` }} />
         </div>

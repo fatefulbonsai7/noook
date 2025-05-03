@@ -54,8 +54,9 @@ export default function BlogPage() {
             image,
           };
         }));
-      } catch {
-        setError('Failed to load blog posts.');
+      } catch (err: any) {
+        setError('Work in progress.');
+        // setError('Failed to load blog posts.');
       } finally {
         setLoading(false);
       }

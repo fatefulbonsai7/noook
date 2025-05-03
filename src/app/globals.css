@@ -5,12 +5,18 @@
   --accent-light: #f8bbd0;
   --accent-dark: #ad1457;
   --surface: #ffe4ec;
+  --box-shadow: 0 2px 8px 0 #f8bbd0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #18141d;
+    --foreground: #fff0f6;
+    --accent: #ffb6d5;
+    --accent-light: #ad1457;
+    --accent-dark: #fff;
+    --surface: #2a2333;
+    --box-shadow: 0 2px 8px 0 #2a2333;
   }
 }
 

@@ -3,17 +3,17 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#ffe4ec", minHeight: 400, padding: "64px 120px 32px 120px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32 }}>
+    <footer style={{ background: "#f8bbd0", color: "var(--foreground)", minHeight: 400, padding: "64px 120px 32px 120px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32 }}>
       {/* Column 1: Logo + Mission */}
       <div>
         <Image src="/logo.png" alt="Noook Logo" width={120} height={120} style={{ objectFit: "contain", marginBottom: 16 }} />
-        <p style={{ fontWeight: 500, fontSize: 18 }}>
+        <p style={{ fontWeight: 500, fontSize: 18, color: "var(--foreground)" }}>
           Empowering families, one creation at a time.
         </p>
       </div>
       {/* Column 2: Quick Links */}
       <div>
-        <h4 style={{ fontWeight: 600, fontSize: 20, marginBottom: 12 }}>Quick Links</h4>
+        <h4 style={{ fontWeight: 600, fontSize: 20, marginBottom: 12, color: "var(--accent-dark)" }}>Quick Links</h4>
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/membership">Membership</a></li>
