@@ -202,9 +202,9 @@ export default function Home() {
           <Image 
             src="/images/instagram1.png" 
             alt="Instagram post preview" 
-            width={400}
-            height={400}
-            style={{ maxWidth: 400, width: "100%", borderRadius: 12, margin: "16px auto", boxShadow: "0 2px 8px 0 #f8bbd0", cursor: "pointer" }}
+            width={500}
+            height={200}
+            style={{ maxWidth: 500, width: "100%", borderRadius: 12, margin: "16px auto", boxShadow: "0 2px 8px 0 #f8bbd0", cursor: "pointer" }}
           />
         </a>
         <div style={{ marginTop: 16 }}>
