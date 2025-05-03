@@ -54,7 +54,7 @@ export default function BlogPage() {
             image,
           };
         }));
-      } catch (err: any) {
+      } catch {
         setError('Failed to load blog posts.');
       } finally {
         setLoading(false);

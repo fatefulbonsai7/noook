@@ -7,7 +7,6 @@ import matter from "gray-matter";
 
 export default function Home() {
   // Read latest blog post
-  let latestPost = null;
   const postsDir = path.join(process.cwd(), "src/content/blog");
   if (fs.existsSync(postsDir)) {
     const filenames = fs.readdirSync(postsDir).filter(f => f.endsWith(".md"));
@@ -23,7 +22,6 @@ export default function Home() {
       };
     });
     posts.sort((a, b) => (a.date < b.date ? 1 : -1));
-    latestPost = posts[0] || null;
   }
 
   return (
@@ -39,7 +37,7 @@ export default function Home() {
       }}
     >
       {/* Headline Blog Update */}
-      {latestPost && (
+      {/*latestPost && (
         <section style={{ background: "#f8bbd0", borderRadius: 14, padding: 24, marginBottom: 36, boxShadow: "0 2px 8px 0 #f8bbd0" }}>
           <div style={{ fontWeight: 900, color: "#ad1457", fontSize: 16, letterSpacing: 1, marginBottom: 6 }}>
             (Latest Blog Update)
@@ -51,7 +49,7 @@ export default function Home() {
             {latestPost.excerpt}
           </div>
         </section>
-      )}
+      )*/}
       {/* Hero Section - Ellie Greeting */}
       <section style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 48, background: "#fff0f6", borderRadius: 24, padding: 32, boxShadow: "0 4px 24px 0 #f8bbd0" }}>
         <Image
@@ -201,18 +199,22 @@ export default function Home() {
         <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "#ad1457" }}>Follow Us on Instagram!</h2>
         <p style={{ fontSize: 18, marginBottom: 12 }}>Join our community and stay inspired by the stories of hope and creativity.</p>
         <a href="https://www.instagram.com/ehzzo/" target="_blank" rel="noopener noreferrer">
-          <img 
+          <Image 
             src="/images/instagram1.png" 
             alt="Instagram post preview" 
+            width={400}
+            height={400}
             style={{ maxWidth: 400, width: "100%", borderRadius: 12, margin: "16px auto", boxShadow: "0 2px 8px 0 #f8bbd0", cursor: "pointer" }}
           />
         </a>
         <div style={{ marginTop: 16 }}>
           <a href="https://www.instagram.com/ehzzo/" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block" }}>
-            <img 
+            <Image 
               src="/icon-ig.svg" 
               alt="Instagram icon" 
-              style={{ width: 40, height: 40, verticalAlign: "middle", cursor: "pointer", display: "block", margin: "0 auto" }}
+              width={40}
+              height={40}
+              style={{ verticalAlign: "middle", cursor: "pointer", display: "block", margin: "0 auto" }}
             />
           </a>
         </div>
