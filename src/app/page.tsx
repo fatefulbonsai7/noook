@@ -174,7 +174,7 @@ export default function Home() {
           <div style={{ flex: "1 1 260px", background: "#f3e5f5", borderRadius: 12, padding: 24, minWidth: 220, color: "#ad1457", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
             <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 8 }}>Join</h3>
             <p style={{ fontSize: 17, marginBottom: 8 }}>Subscribe to Club NOOOK through monthly, annual or lifetime membership</p>
-            <a href="/membership" style={{ color: "#fff", background: "#ad1457", fontWeight: 600, padding: "6px 16px", borderRadius: 8, display: "inline-block", marginTop: 8 }}>Become a Sponsor</a>
+            <a href="/membership" style={{ color: "#fff", background: "#ad1457", fontWeight: 600, padding: "6px 16px", borderRadius: 8, display: "inline-block", marginTop: 8 }}>Become a Member</a>
           </div>
           <div style={{ flex: "1 1 260px", background: "#f3e5f5", borderRadius: 12, padding: 24, minWidth: 220, color: "#ad1457", boxShadow: "0 2px 8px 0 #f8bbd0" }}>
             <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 8 }}>Volunteer</h3>
@@ -182,16 +182,6 @@ export default function Home() {
             <a href="mailto:NOOOK.secretary@gmail.com" style={{ color: "#fff", background: "#ad1457", fontWeight: 600, padding: "6px 16px", borderRadius: 8, display: "inline-block", marginTop: 8 }}>Contact Us</a>
           </div>
         </div>
-      </section>
-
-      {/* Newsletter Signup Section */}
-      <section style={{ background: "#fff0f6", borderRadius: 18, padding: 32, marginBottom: 48, boxShadow: "0 2px 8px 0 #f8bbd0", textAlign: "center" }}>
-        <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "#ad1457" }}>Stay in the Loop!</h2>
-        <p style={{ fontSize: 18, marginBottom: 12 }}>Sign up for our newsletter and follow our journey of hope, creativity, and compassion.</p>
-        <form action="#" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, maxWidth: 320, margin: "0 auto" }}>
-          <input type="email" placeholder="Your email address" style={{ padding: 10, borderRadius: 8, border: "1px solid #f06292", fontSize: 16, marginBottom: 4, width: "100%" }} required />
-          <button type="submit" style={{ background: "#f06292", color: "#fff", fontWeight: 700, padding: "10px 24px", borderRadius: 8, border: "none", fontSize: 18, cursor: "pointer" }}>Subscribe</button>
-        </form>
       </section>
 
       {/* Instagram Section */}
@@ -217,6 +207,21 @@ export default function Home() {
               style={{ verticalAlign: "middle", cursor: "pointer", display: "block", margin: "0 auto" }}
             />
           </a>
+        </div>
+      </section>
+
+      {/* Newsletter Signup Section */}
+      <section style={{ background: "#fff0f6", borderRadius: 18, padding: 32, marginBottom: 48, boxShadow: "0 2px 8px 0 #f8bbd0", textAlign: "center" }}>
+        {/*<h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "#ad1457" }}>Stay in the Loop!</h2>
+        <p style={{ fontSize: 18, marginBottom: 12 }}>Sign up for our newsletter and follow our journey of hope, creativity, and compassion.</p>
+        <form action="#" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, maxWidth: 320, margin: "0 auto" }}>
+          <input type="email" placeholder="Your email address" style={{ padding: 10, borderRadius: 8, border: "1px solid #f06292", fontSize: 16, marginBottom: 4, width: "100%" }} required />
+          <button type="submit" style={{ background: "#f06292", color: "#fff", fontWeight: 700, padding: "10px 24px", borderRadius: 8, border: "none", fontSize: 18, cursor: "pointer" }}>Subscribe</button>
+        </form>*/}
+        <div>
+          <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 10, color: "#ad1457" }}>Stay in the Loop!</h2>
+          <p style={{ fontSize: 18, marginBottom: 12 }}>Sign up for our newsletter and follow our journey of hope, creativity, and compassion.</p>
+          <div style={{ margin: '0 auto', maxWidth: 700 }} dangerouslySetInnerHTML={{ __html: `<iframe width="700" height="305" src="https://sibforms.com/serve/MUIFALUJ_F6nQuoPMDXi2f2H_-nihde4rYlZAklbsivf2zNjBUvK71i9bV_5O0HXUYuq5gmQbMj6bjjJ-RqBWvOpvm3ifcRkxSdxB8pGWaBGLSu6Whg6RgYaCJiXHFT1Dj-VVyMq21pGW3jZccYdL7zSz8XbJjDewpcAPcz5D3ZiSvvsya8zn0zSAs2JCQtrTELZdJE41MpR9gE1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>` }} />
         </div>
       </section>
 
